@@ -1,0 +1,141 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: rgb(225, 232, 239);
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.main {
+  height: 50rem;
+  display: flex;
+  border: 2px solid black;
+}
+
+/*Header*/
+header {
+  position: fixed;
+  display:flex;
+  align-items: center;
+  top: 0;
+  left: 7%;
+  z-index: 5;
+  height: 4.3rem;
+  width: 100%;
+  background-color: inherit;
+
+}
+
+header .logo {
+  margin-left:3%;
+  top: 1rem;
+}
+
+ header .logo img {
+   padding:1rem 1rem;
+}
+
+header .logo span {
+position: relative;
+bottom: 1.5rem;
+
+}
+
+header nav {
+
+}
+
+ nav span {
+  padding-left: 2rem;
+  display: inline-flex;
+  align-items: flex-end;
+  color: rgb(65, 70, 76);
+}
+
+header nav a {
+  text-decoration: none;
+
+}
+
+.banner-container {
+  background-size: contain;
+  height: 100%;
+  position: relative;
+}
+
+.banner-container img {
+  align-self: center;
+}
+
+.banner-container .text-container {
+  background-color: rgb(225, 232, 239);
+  position: absolute;
+  left: 2rem;
+  bottom: 3rem;
+  padding: 1rem 1rem;
+
+}
+
+.left-side, .right-side {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-height: 40rem;
+
+}
+.left-side {
+  margin-right: 1rem;
+}
+
+.left-side .man-reading-img img{
+  margin: 1rem 0 1rem 0.5rem;
+  height: 80%;
+}
+
+.left-side h2 {
+  font-size: 2rem;
+}
+
+.left-side p {
+  font-size: 1.5rem;
+}
+.right-side {
+  margin: 2rem 1rem;
+}
+
+.info-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.info-box .text {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.info-box h3 {
+  margin-bottom: 0;
+}
+
+.info-box p {
+  margin-bottom: 0;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

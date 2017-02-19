@@ -3,39 +3,26 @@ html {
 }
 
 body {
+  max-width: 1200px;
   background-color: rgb(225, 232, 239);
-  margin: 0;
+  margin: 0 auto;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-
-}
-
-.main {
-  height: 50rem;
-  display: flex;
-  border: 2px solid black;
+  height: 45rem;
 }
 
 /*Header*/
 header {
   position: fixed;
-  display:flex;
-  align-items: center;
+  margin: 0 auto;
   top: 0;
-  left: 7%;
   z-index: 5;
   height: 4.3rem;
   width: 100%;
   background-color: inherit;
+  border-bottom: 2px solid rgb(173, 182, 198);
 
-}
-
-header .logo {
-  margin-left:3%;
-  top: 1rem;
 }
 
  header .logo img {
@@ -45,97 +32,238 @@ header .logo {
 header .logo span {
 position: relative;
 bottom: 1.5rem;
+font-weight: bold;
+font-size: 1.5rem;
 
 }
 
-header nav {
+ header nav span {
+   color: rgb(65, 70, 76);
+   font-weight: bold;
+   padding-right: 1.5rem;
 
-}
-
- nav span {
-  padding-left: 2rem;
-  display: inline-flex;
-  align-items: flex-end;
-  color: rgb(65, 70, 76);
 }
 
 header nav a {
   text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(65, 70, 76);
 
+}
+
+header nav a:hover {
+  transition: color 200ms linear 100ms;
+  color: red;
+
+}
+
+header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 15rem;
 }
 
 .banner-container {
-  background-size: contain;
-  height: 100%;
-  position: relative;
-}
-
-.banner-container img {
-  align-self: center;
+  background-image: url("./images/capstone_colmar_assets/capstone_colmar_assets/images/banner.jpg");
+  height: 43rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner-container .text-container {
+  font-size: 1.3rem;
   background-color: rgb(225, 232, 239);
   position: absolute;
-  left: 2rem;
-  bottom: 3rem;
+  left: 12rem;
+  bottom: 5rem;
   padding: 1rem 1rem;
-
-}
-
-.left-side, .right-side {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  max-height: 40rem;
-
-}
-.left-side {
-  margin-right: 1rem;
-}
-
-.left-side .man-reading-img img{
-  margin: 1rem 0 1rem 0.5rem;
-  height: 80%;
-}
-
-.left-side h2 {
-  font-size: 2rem;
-}
-
-.left-side p {
-  font-size: 1.5rem;
-}
-.right-side {
-  margin: 2rem 1rem;
-}
-
-.info-box {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-}
-
-.info-box .text {
-  font-size: 1.4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
 
 }
 
-.info-box h3 {
+.text-container h1 {
   margin-bottom: 0;
 }
 
-.info-box p {
-  margin-bottom: 0;
+.text-container p {
+  margin-bottom: 1rem;
 }
 
+.text-container .button a {
+  text-decoration: none;
+  color: rgb(65, 70, 76);
+  font-weight: bold;
+}
+
+.text-container .button a:hover {
+  transition: color 200ms linear 100ms;
+  color: red;
+}
+
+.main {
+  display: block;
+  max-width: 100%;
+  margin: 1.5rem auto;
+}
+
+.container2 {
+  display: flex;
+}
+.man-reading img {
+  margin-left: 15%;
+  max-width: 75%;
+
+}
+.man-reading h2, p, span {
+  text-align: center;
+}
+
+.man-reading h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.man-reading p, .man-reading .emanuel {
+  font-size: 1.5rem;
+}
+
+.emanuel {
+  font-weight: bold;
+  text-align: center;
+}
+
+.info-box {
+  max-width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2rem;
+}
+.info-box .text {
+  font-size: 1.5rem;
+}
+
+.info-box .text a {
+  text-decoration: none;
+  color: rgb(65, 70, 76);
+  font-weight: bold;
+}
+
+.info-box .text a:hover {
+  transition: color 200ms linear 100ms;
+  color: red;
+}
 
 .flex-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+ .learning {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.course-container {
+  width: 45%;
+  display: block;
+}
+
+.bottom-main {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+}
+
+.container3 {
+  height: 20rem;
+  display: block;
+  max-width: 100%;
+  margin: 1.5rem auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.content a {
+  text-decoration: none;
+  color: rgb(65, 70, 76);
+  font-weight: bold;
+}
+
+.content a:hover {
+  transition: color 200ms linear 100ms;
+  color: red;
+}
+
+.video {
+  height: 20rem;
+}
+
+ video {
+  max-width: 100%;
+  background-position: center;
+}
+
+.container3 h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.container3 p {
+  font-size: 1.5rem;
+
+}
+
+.bottom-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  z-index: 1;
+}
+
+.bottom-main .content {
+  position: relative;
+  top: 2rem;
+  margin: 0 1rem;
+  width: 30%;
+}
+
+.bottom-main .content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+
+.bottom-main .content p {
+  font-size: 1.5rem;
+}
+footer {
+height: 10rem;
+background-color: blue;
+color: white;
+position: relative;
+top: 95%;
 }

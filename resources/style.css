@@ -71,7 +71,7 @@ header {
 
 }
 
- header .logo img {
+header .logo img {
    padding:1rem 1rem;
 }
 
@@ -168,17 +168,17 @@ header .header-container {
 }
 .man-reading img {
   flex:1;
+  margin: 1.5rem 0;
   position: relative;
   left: 8rem;
   max-width: 80%;
   background-color: rgba(177, 193, 219, 0.5);
 
 }
-.man-reading h2, .man-reading p {
+.man-reading h2, .man-reading p,.emanuel {
   max-width: 43rem;
+  margin: 0 auto;
   text-align: center;
-
-
 }
 
 .man-reading h2 {
@@ -186,14 +186,14 @@ header .header-container {
   font-weight: bold;
 }
 
-.man-reading p, .man-reading .emanuel {
+.man-reading p, .emanuel {
   font-size: 1.5rem;
 }
 
 .emanuel {
   font-weight: bold;
   position: relative;
-  left: 22rem;
+  left: 23rem;
   padding: 1rem 0;
 }
 
@@ -212,16 +212,6 @@ header .header-container {
   text-align: center;
 }
 
-.text p {
-  /*position: relative;
-  left: 11%;*/
-}
-
-.text a {
-  /*position: relative;
-  left: 7%;*/
-}
-
 .info-box .text a {
   text-decoration: none;
   color: rgb(124, 170, 244);
@@ -237,7 +227,6 @@ header .header-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: rgba(177, 193, 219, 0.5);
   margin: 1rem 1rem;
 }
 
@@ -270,7 +259,6 @@ header .header-container {
   display: block;
   max-width: 100%;
   margin: 1.5rem auto;
-  background-color: rgba(177, 193, 219, 0.5);
 }
 
 .center {
@@ -315,20 +303,23 @@ header .header-container {
 .bottom-main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   padding-top: 2rem;
 }
 
 .bottom-main .content {
-  border: 1px solid rgb(177, 193, 219);
+  border: 2px solid rgb(177, 193, 219);
   background-color: rgb(108, 109, 127);
   color: white;
-  position: relative;
-  top: 2rem;
-  margin: 0 1rem;
-  width: 30%;
-  height: 60%;
+  width: 25%;
+  padding: 0 1rem;
+
+}
+
+.bottom-main .image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .bottom-main .content h3 {
@@ -345,6 +336,10 @@ footer {
 height: 10rem;
 background-color: rgb(108, 109, 127);
 color: white;
-/*position: relative;
-top: 95%;*/
+}
+
+footer span {
+  position: relative;
+  top: 45%;
+  left: 5%;
 }

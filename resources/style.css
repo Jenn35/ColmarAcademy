@@ -1,3 +1,47 @@
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v7/EjsrzDkQUQCDwsBtLpcVQVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v7/DugPdSljmOTocZOR2CItOugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Fira Sans Italic'), local('FiraSans-Italic'), url(https://fonts.gstatic.com/s/firasans/v7/QURAmFz4b80g324-oF-Uj44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Fira Sans Bold Italic'), local('FiraSans-BoldItalic'), url(https://fonts.gstatic.com/s/firasans/v7/6s0YCA9oCTF6hM60YM-qTYlIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 html {
   font-size: 16px;
 }
@@ -6,6 +50,8 @@ body {
   max-width: 1200px;
   background-color: rgb(225, 232, 239);
   margin: 0 auto;
+  overflow-x: hidden;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .container {
@@ -47,13 +93,14 @@ font-size: 1.5rem;
 header nav a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: rgb(65, 70, 76);
+  color: rgb(83, 132, 161);
+  border-radius: 5%;
 
 }
 
 header nav a:hover {
   transition: color 200ms linear 100ms;
-  color: red;
+  color: rgb(55, 63, 76);
 
 }
 
@@ -70,6 +117,7 @@ header .header-container {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba(177, 193, 219, 0.5);
 }
 
 .banner-container .text-container {
@@ -93,31 +141,44 @@ header .header-container {
 
 .text-container .button a {
   text-decoration: none;
-  color: rgb(65, 70, 76);
+  color: rgb(83, 132, 161);
   font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: rgb(212, 212, 212);
+  border-radius: 5%;
+
 }
 
 .text-container .button a:hover {
   transition: color 200ms linear 100ms;
-  color: red;
+  color: rgb(144, 149, 152);
 }
 
 .main {
   display: block;
   max-width: 100%;
   margin: 1.5rem auto;
+  background-color: rgba(218, 235, 246);
 }
 
 .container2 {
   display: flex;
-}
-.man-reading img {
-  margin-left: 15%;
-  max-width: 75%;
+  background-color: rgba(218, 235, 246);
 
 }
-.man-reading h2, p, span {
+.man-reading img {
+  flex:1;
+  position: relative;
+  left: 8rem;
+  max-width: 80%;
+  background-color: rgba(177, 193, 219, 0.5);
+
+}
+.man-reading h2, .man-reading p {
+  max-width: 43rem;
   text-align: center;
+
+
 }
 
 .man-reading h2 {
@@ -131,7 +192,9 @@ header .header-container {
 
 .emanuel {
   font-weight: bold;
-  text-align: center;
+  position: relative;
+  left: 22rem;
+  padding: 1rem 0;
 }
 
 .info-box {
@@ -140,27 +203,42 @@ header .header-container {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-right: 2rem;
+  margin: 2rem 2rem;
+
 }
+
 .info-box .text {
   font-size: 1.5rem;
+  text-align: center;
+}
+
+.text p {
+  /*position: relative;
+  left: 11%;*/
+}
+
+.text a {
+  /*position: relative;
+  left: 7%;*/
 }
 
 .info-box .text a {
   text-decoration: none;
-  color: rgb(65, 70, 76);
+  color: rgb(124, 170, 244);
   font-weight: bold;
 }
 
 .info-box .text a:hover {
   transition: color 200ms linear 100ms;
-  color: red;
+  color: rgb(55, 63, 76);
 }
 
 .flex-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: rgba(177, 193, 219, 0.5);
+  margin: 1rem 1rem;
 }
 
 .image-container img {
@@ -172,11 +250,14 @@ header .header-container {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
+  padding-top: 1rem 0;
 }
 
 .course-container {
   width: 45%;
   display: block;
+  background-color: rgba(177, 193, 219, 0.5);
+  margin: 1rem 1rem;
 }
 
 .bottom-main {
@@ -186,10 +267,10 @@ header .header-container {
 }
 
 .container3 {
-  height: 20rem;
   display: block;
   max-width: 100%;
   margin: 1.5rem auto;
+  background-color: rgba(177, 193, 219, 0.5);
 }
 
 .center {
@@ -207,17 +288,13 @@ header .header-container {
 
 .content a {
   text-decoration: none;
-  color: rgb(65, 70, 76);
+  color: rgb(124, 170, 244);
   font-weight: bold;
 }
 
 .content a:hover {
   transition: color 200ms linear 100ms;
-  color: red;
-}
-
-.video {
-  height: 20rem;
+  color: rgb(83, 132, 161);
 }
 
  video {
@@ -241,14 +318,17 @@ header .header-container {
   align-items: center;
   flex-wrap: wrap;
   padding-top: 2rem;
-  z-index: 1;
 }
 
 .bottom-main .content {
+  border: 1px solid rgb(177, 193, 219);
+  background-color: rgb(108, 109, 127);
+  color: white;
   position: relative;
   top: 2rem;
   margin: 0 1rem;
   width: 30%;
+  height: 60%;
 }
 
 .bottom-main .content h3 {
@@ -260,10 +340,11 @@ header .header-container {
 .bottom-main .content p {
   font-size: 1.5rem;
 }
+
 footer {
 height: 10rem;
-background-color: blue;
+background-color: rgb(108, 109, 127);
 color: white;
-position: relative;
-top: 95%;
+/*position: relative;
+top: 95%;*/
 }

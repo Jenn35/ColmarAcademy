@@ -47,15 +47,13 @@ html {
 }
 
 body {
-  max-width: 1200px;
   background-color: rgb(225, 232, 239);
-  margin: 0 auto;
-  overflow-x: hidden;
   font-family: "Fira Sans", sans-serif;
 }
 
 .container {
-  height: 45rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /*Header*/
@@ -86,13 +84,13 @@ font-size: 1.5rem;
  header nav span {
    color: rgb(65, 70, 76);
    font-weight: bold;
-   padding-right: 1.5rem;
+   font-size: 1.5rem;
+   padding-right: 1rem;
 
 }
 
 header nav a {
   text-decoration: none;
-  font-size: 1.5rem;
   color: rgb(83, 132, 161);
   border-radius: 5%;
 
@@ -108,7 +106,7 @@ header .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 15rem;
+  margin-right: 10rem;
 }
 
 .banner-container {
@@ -167,11 +165,10 @@ header .header-container {
 
 }
 .man-reading img {
-  flex:1;
-  margin: 1.5rem 0;
-  position: relative;
-  left: 8rem;
-  max-width: 80%;
+  margin: 1.5rem auto;
+  display: flex;
+  align-items: center;
+  max-width: 75%;
   background-color: rgba(177, 193, 219, 0.5);
 
 }
@@ -192,16 +189,16 @@ header .header-container {
 
 .emanuel {
   font-weight: bold;
-  position: relative;
-  left: 23rem;
+  display: flex;
+  justify-content: center;
   padding: 1rem 0;
 }
 
 .info-box {
-  max-width: 35%;
+  max-width:100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 2rem 2rem;
 
@@ -226,12 +223,12 @@ header .header-container {
 .flex-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  margin: 1rem 1rem;
+  margin: 0 auto;
 }
 
 .image-container img {
-  display: block;
   max-width: 100%;
 }
 
@@ -243,10 +240,10 @@ header .header-container {
 }
 
 .course-container {
-  width: 45%;
-  display: block;
+  max-width: 45%;
   background-color: rgba(177, 193, 219, 0.5);
   margin: 1rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .bottom-main {
@@ -290,46 +287,45 @@ header .header-container {
   background-position: center;
 }
 
-.container3 h2 {
+.container3 h2, .container3 p {
+  max-width: 75%;
   font-size: 2rem;
-  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.container3 p {
-  font-size: 1.5rem;
-
+.container3 h2 {
+font-weight: bold;
 }
 
 .bottom-main {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 2rem;
+  height: 40rem;
+  margin: 0 auto;
 }
 
 .bottom-main .content {
   border: 2px solid rgb(177, 193, 219);
   background-color: rgb(108, 109, 127);
   color: white;
-  width: 25%;
   padding: 0 1rem;
 
 }
 
 .bottom-main .image-container {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+  margin: 1rem 0;
 }
 
 .bottom-main .content h3 {
-  font-size: 1.5rem;
   font-weight: bold;
 
 }
 
-.bottom-main .content p {
+.bottom-main .content p, .bottom-main .content h3 {
   font-size: 1.5rem;
+  margin: 3rem 1rem;
+  padding: 0 1rem;
 }
 
 footer {
